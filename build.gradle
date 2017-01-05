@@ -17,10 +17,11 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        mavenCentral()
     }
 }
 
 ext {
     // Open the Git repository in the current directory.
-    grgit = org.ajoberstar.grgit.Grgit.open(dir: '..')
+    grgit = org.ajoberstar.grgit.Grgit.open(dir: '.')
 }
